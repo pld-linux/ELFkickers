@@ -20,6 +20,12 @@ ebfc.
 %prep
 %setup -q -n ELFkickers
 
+mv -f ebfc/README README.ebfc
+mv -f elfls/README README.elfls
+mv -f elftoc/README README.elftoc
+mv -f rebind/README README.rebind
+mv -f sstrip/README README.sstrip
+
 %build
 %{__make} CFLAGS="%{rpmcflags}" -C ebfc
 %{__make} CFLAGS="%{rpmcflags}" -C sstrip
@@ -34,19 +40,11 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 install ebfc/ebfc sstrip/sstrip elfls/elfls elftoc/elftoc rebind/rebind $RPM_BUILD_ROOT%{_bindir}
 install */*.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
-mv -f ebfc/README README.ebfc
-mv -f elfls/README README.elfls
-mv -f elftoc/README README.elftoc
-mv -f rebind/README README.rebind
-mv -f sstrip/README README.sstrip
-
-gzip -9nf README* Changelog ebfc/elfparts.txt tiny/README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README* Changelog* tiny ebfc/bf ebfc/elfparts.txt*
+%doc README* Changelog tiny ebfc/bf ebfc/elfparts.txt
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*
