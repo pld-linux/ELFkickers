@@ -7,7 +7,6 @@ License:	GPL
 Group:		Development/Tools
 Source0:	ftp://ftp.muppetlabs.com/pub/software/%{name}-%{version}.tar.gz
 URL:		http://www.muppetlabs.com/~breadbox/software/elfkickers.html
-##BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -31,6 +30,7 @@ ebfc.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
+
 install ebfc/ebfc sstrip/sstrip elfls/elfls elftoc/elftoc rebind/rebind $RPM_BUILD_ROOT%{_bindir}
 install */*.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
@@ -39,6 +39,7 @@ mv -f elfls/README README.elfls
 mv -f elftoc/README README.elftoc
 mv -f rebind/README README.rebind
 mv -f sstrip/README README.sstrip
+
 gzip -9nf README* Changelog ebfc/elfparts.txt tiny/README
 
 %clean
