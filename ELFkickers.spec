@@ -5,9 +5,6 @@ Version:	2.0
 Release:	2
 License:	GPL
 Group:		Development/Tools
-Group(de):	Entwicklung/Werkzeuge
-Group(fr):	Development/Outils
-Group(pl):	Programowanie/Narzêdzia
 Source0:	ftp://ftp.muppetlabs.com/pub/software/%{name}-%{version}.tar.gz
 URL:		http://www.muppetlabs.com/~breadbox/software/elfkickers.html
 ##BuildArch:	noarch
