@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Development/Tools
 Source0:	ftp://ftp.muppetlabs.com/pub/software/%{name}-%{version}.tar.gz
+# Source0-md5:	3bf4d8d285591a5b7f31170f9b87aba0
 URL:		http://www.muppetlabs.com/~breadbox/software/elfkickers.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
