@@ -1,8 +1,8 @@
 Summary:	Tools to manipulate ELF files
 Summary(pl):	Narzêdzia do obróbki plików ELF
 Name:		ELFkickers
-Version:	2.0
-Release:	2
+Version:	2.0a
+Release:	1
 License:	GPL
 Group:		Development/Tools
 Source0:	ftp://ftp.muppetlabs.com/pub/software/%{name}-%{version}.tar.gz
