@@ -1,5 +1,5 @@
 Summary:	Tools to manipulate ELF files
-Summary(pl):	Narz阣zia do obr骲ki plik體 ELF
+Summary(pl.UTF-8):   Narz臋dzia do obr贸bki plik贸w ELF
 Name:		ELFkickers
 Version:	2.0a
 Release:	2
@@ -14,8 +14,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Collection of programs to manipulate ELF files: sstrip, rebind, elfls,
 elftoc, ebfc.
 
-%description -l pl
-Zestaw program體 do obr骲ki plik體 ELF: sstrip, rebind, elfls, elftoc,
+%description -l pl.UTF-8
+Zestaw program贸w do obr贸bki plik贸w ELF: sstrip, rebind, elfls, elftoc,
 ebfc.
 
 %prep
