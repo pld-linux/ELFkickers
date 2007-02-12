@@ -1,5 +1,5 @@
 Summary:	Tools to manipulate ELF files
-Summary(pl.UTF-8):   Narzędzia do obróbki plików ELF
+Summary(pl.UTF-8):	Narzędzia do obróbki plików ELF
 Name:		ELFkickers
 Version:	2.0a
 Release:	2
